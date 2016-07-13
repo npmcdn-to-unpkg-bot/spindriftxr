@@ -2,6 +2,20 @@
 .md-blue {color: #3b7cbe;}
 .lt-blue {color: #33c5f4;}
 .green {color: #70c493;}
-.teal {color: #5ec5c4;}
+// .teal {color: #5ff1f1;}
+.teal {color: #5aa0a0;}
 .bg-teal {background-color:#5ec5c4;}
 .navy {color: #001F3F;}
+
+
+.b--lt-blue {border-color: #3b7cbe;}
+
+
+.collapse {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.striped--blue:nth-child(odd) {
+  background-color: #7ac5de;
+}
