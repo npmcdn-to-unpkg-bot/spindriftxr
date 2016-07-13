@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
     <!-- These meta tags come first. -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="The ultimate adventure race, we provide the boats and logistics, you row from the Bahamas to South Carolina.">
     <meta name="keywords" content="ocean adventure race, open ocean rowing">
+    <!-- FB META TAGS -->
+    <meta property="fb:app_id" content="134262553672062" />
+    <meta property="og:type"   content="website" />
+    <meta property="og:url"    content="https://www.spindriftxr.com" />
+    <meta property="og:title"  content="SpinDrift XR" />
+    <meta property="og:description"  content="The Ultimate Ocean Rowing Team Adventure Race" />
+    <meta property="og:image"  content="https://wwww.spindriftxr.com/spindriftxr_hero-cool.jpg" /> 
+
+
 
 
     <title>US Open Ocean Rowing Race: SpinDriftXR</title>
@@ -54,6 +63,27 @@
 </head>
 
 <body>
+
+<!-- FB SDK -->
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '134262553672062',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- END FB SDK -->
+
     <div style="background:url('spindriftxr_hero.jpg') no-repeat center; background-size: cover;" style="mt0">
         <h1 class="tc mt0">
         <img src="spindriftxr-white.svg" class="center mw5 mw6-ns pt5 pb6">
@@ -428,8 +458,6 @@
                 </form>
             </div>
             <div class="pv3 center">
-
-
             <div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
             </div>
             </div>
